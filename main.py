@@ -14,6 +14,8 @@ if not logger.hasHandlers():
     logger.addHandler(handler)
 
 mcp = FastMCP("hyteria")
+mcp.settings.host = "0.0.0.0"
+#mcp.settings.message_path = "/hyteria-mcp/messages/"
 
 @mcp.tool()
 def get_hyeteria_menu_info(query: str) -> str:
@@ -65,4 +67,4 @@ def get_hyeteria_menu_info(query: str) -> str:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="sse")
+    mcp.run(transport="sse", mount_path="/hyteria-mcp")

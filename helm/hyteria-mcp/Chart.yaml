@@ -1,0 +1,16 @@
+apiVersion: v2
+name: hyteria-mcp
+description: Hyteria MCP 메뉴 조회 서비스
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+keywords:
+  - mcp
+  - menu
+  - hyteria
+home: https://github.com/kimhyun5u/hyteria-mcp
+sources:
+  - https://github.com/kimhyun5u/hyteria-mcp
+maintainers:
+  - name: kim hyunsu
+    email: 22kimhyun5u@gmail.com 
